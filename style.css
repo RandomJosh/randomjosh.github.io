@@ -1,0 +1,140 @@
+h1{
+	color: blue;
+	text-align: center;
+	margin: 10px;
+	font-family:"Impact";
+	font-size: 30pt;
+	margin-bottom: 30px;
+}
+h2{
+	color: blue;
+	text-align: center;
+	margin: 10px;
+	font-family:"Impact";
+	font-size: 25pt;
+	margin-bottom: 21px;
+}
+h3{
+	color: blue;
+	text-align: center;
+	margin: 10px;
+	font-family:"Impact";
+	font-size: 20pt;
+}
+h4{
+	color: #0066CC;
+    text-align: center;
+	margin: 10px;
+}
+body{
+	background: cornflowerblue;
+	background: linear-gradient(cornflowerblue, powderblue);
+	font-family:"Palatino Linotype";
+}
+.title{
+	color: rgb(121, 20, 209);
+	font-size: 40pt;
+}
+
+.topnav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: cornflowerblue;
+}
+
+.topnav li{
+	float: left;
+}
+
+.topnav li a{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.topnav li a:hover{
+	background-color: #4F88EC;
+}
+
+.center{
+	align-content: center;
+}
+
+.TopScreen{
+	background-color: cornflowerblue; 
+	padding-bottom: 30px;
+}
+
+.about-area{
+	background-color: #4a59f9;
+	padding-bottom: 30px;
+}
+
+.work-area{
+	background-color: #7560ff;
+	padding-bottom: 30px;
+}
+
+.contact-area{
+	background-color: #fc16e9;
+	padding-bottom: 30px;
+}
+
+#selfie{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+}
+
+#selfie:hover{
+	content: url('Vampire_Blur_wc.jpg');
+}
+
+iframe.Subscriber{
+    text-align: center;
+}
+
+.video-container{
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+footer{
+	text-align: center;
+	background-color: #212121;
+	color: #CCC;
+	padding: 30px;
+}
+
+button{
+	color: #FFF;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: #2200e5;
+	align-content: center;
+}
+
+button:hover{
+	background-color: #1b00ba;
+}
