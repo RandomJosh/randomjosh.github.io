@@ -1,3 +1,4 @@
+/*Basic styles to begin with*/
 h1{
 	color: blue;
 	text-align: center;
@@ -31,9 +32,15 @@ body{
 	background: linear-gradient(cornflowerblue, powderblue);
 	font-family:"Palatino Linotype";
 }
+/*Specific style for the title*/
 .title{
 	color: rgb(121, 20, 209);
 	font-size: 40pt;
+}
+/*Navigation styling to get it to look and animate correctly*/
+nav{
+	z-index: 2;
+	position: relative;
 }
 
 .topnav{
@@ -44,7 +51,7 @@ body{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: cornflowerblue;
+	background-color: black;
 }
 
 .topnav li{
@@ -73,10 +80,18 @@ body{
 	background-color: cornflowerblue; 
 	padding-bottom: 30px;
 }
-
+/*Specific Styling options for each different page*/
 .about-area{
-	background-color: #4a59f9;
+	background-color: #2f77db;
 	padding-bottom: 30px;
+}
+
+.about-area p{
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	font-size: 17px;
 }
 
 .work-area{
@@ -90,10 +105,10 @@ body{
 }
 
 .contact-area{
-	background-color: #fc16e9;
+	background-color: #5c65ff;
 	padding-bottom: 30px;
 }
-
+/*Syling options which make the image on the home page circular and also animate on hover*/
 #selfie{
 	display: block;
 	margin-left: auto;
@@ -104,11 +119,11 @@ body{
 #selfie:hover{
 	content: url('Vampire_Blur_wc2.jpg');
 }
-
+/*Align the subscriber counter to the center of the page*/
 iframe.Subscriber{
     text-align: center;
 }
-
+/*Styles the video container to look the correct way and be positioned correctly*/
 .video-container{
 	position: relative;
 	padding-bottom: 56.25%;
@@ -118,18 +133,20 @@ iframe.Subscriber{
 }
 
 .video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
+	position: absolute;
 	top:0;
 	left:0;
 	width:50%;
 	height:50%;
+	z-index: 1;
 }
 
+/*All options for the scrolling photobanner which houses my video thumbnails*/ 
 #container {
 	width: 100%;
 	overflow: hidden;
 	margin: 50px auto;
-	background: white;
+	
 }
 
 .photobanner {
@@ -220,20 +237,21 @@ iframe.Subscriber{
    		margin-left: -3900px;
  	}
  }
-
+/*Styling options for my footer which is present on every page*/
 footer{
 	text-align: center;
 	background-color: #212121;
 	color: #CCC;
 	padding: 30px;
 }
-
+/*Universal styling for every button within my website*/
 button{
 	color: #FFF;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 	background-color: #2200e5;
 	align-content: center;
+	border-radius: 8px;
 }
 
 button:hover{
