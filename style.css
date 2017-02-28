@@ -151,11 +151,11 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-	background-image: url();
+	background-image: url("About_Header.jpg");
 }
 
 section.module.parallax-2 {
-	background-image: url();
+	background-image: url("Work_Image.jpg");
 }
 
 section.module.parallax-3 {
@@ -164,6 +164,10 @@ section.module.parallax-3 {
 
 section.module.parallax-4 {
 	background-image: url("South_London_Map2.jpg");
+}
+
+section.module.parallax-5 {
+	background-image: url("Youtube_Header.jpg");
 }
 /*Syling options which make the image on the home page circular and also animate on hover*/
 #selfie{
