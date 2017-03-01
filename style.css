@@ -28,8 +28,7 @@ h4{
 	margin: 10px;
 }
 body{
-	background: cornflowerblue;
-	background: linear-gradient(cornflowerblue, powderblue);
+	background-color: #181ba2;
 	font-family:"Palatino Linotype";
 }
 /*Specific style for the title*/
@@ -105,8 +104,12 @@ nav{
 }
 
 .youtube-area{
-	background-color: cornflowerblue;
+	background-color: #181ba2;
 	padding-bottom: 30px;
+}
+
+.youtube-area p{
+	color: white;
 }
 
 .contact-area{
@@ -114,6 +117,7 @@ nav{
 	padding-bottom: 30px;
 }
 
+/*This section contains all the code to make the parallax effect on the images work correctly*/
 .container {
 	max-width: 960px;
 	margin: 0 auto;
@@ -138,7 +142,7 @@ section.module.content{
 }
 
 section.module.parallax {
-	height: 600px;
+	height: 100%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -216,8 +220,8 @@ iframe.Subscriber{
 }
 
 .photobanner {
-	height: 196px;
-	width: 6000px;
+	height: 100px;
+	width: 7000px;
 	margin-bottom: 10px;
 }
 
@@ -255,7 +259,7 @@ iframe.Subscriber{
 		margin-left: 0px;
 	}
 	100% {
-		margin-left: -3900px;
+		margin-left: -4700px;
 	}
 }
 
@@ -264,7 +268,7 @@ iframe.Subscriber{
    		margin-left: 0px;
     }
     100% {
-        margin-left: -3900px;
+        margin-left: -4700px;
     }
 }
 
@@ -273,7 +277,7 @@ iframe.Subscriber{
    		margin-left: 0px;
  	}
 	100% {
-   		margin-left: -3900px;
+   		margin-left: -4700px;
  	}
 }
  
@@ -282,7 +286,7 @@ iframe.Subscriber{
    		margin-left: 0px;
  	}
  	100% {
-   		margin-left: -3900px;
+   		margin-left: -4700px;
  	}
 }
 
@@ -291,7 +295,7 @@ iframe.Subscriber{
 		margin-left: 0px;
 	}
 	100%{
-		margin-left: -3900px;
+		margin-left: -4700px;
 	}
 }
 
@@ -300,7 +304,7 @@ iframe.Subscriber{
    		margin-left: 0px;
  	}
  	100% {
-   		margin-left: -3900px;
+   		margin-left: -4700px;
  	}
  }
 /*Styling options for my footer which is present on every page*/
