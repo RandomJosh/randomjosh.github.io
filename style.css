@@ -249,6 +249,10 @@ section.module.parallax h1 {
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+section.module.parallax-frontpage {
+	background-image: url("index_header.jpg");
+}
+
 section.module.parallax-1 {
 	background-image: url("About_Header.jpg");
 }
