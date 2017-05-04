@@ -14,6 +14,7 @@
     <link rel="external stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="bootstrap stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -24,38 +25,43 @@
             <a href="#" id="menu-icon"></a>
 
             <ul class="topnav" id="myTopnav">
-            	<li>
+            	<li class="left">
             		<img src="Logo_50px.svg" alt="">
             	</li>
-            	<li>
+            	<li class="left">
             		<a href='index.html' class="current">Home</a>
                 </li>
-                <li>
+                <li class="left">
                     <a href='about-page.html'>About</a>
                 </li>
-                <li>
+                <li class="left">
                     <a href='work-page.html'>Work</a>
                 </li>
-                <li>
+                <li class="left">
                     <a href='contact-page.html'>Contact</a>
                 </li>
-                <li>
+                <li class="left">
                     <a href='youtube-page.html'>Youtube</a>
                 </li>
+                <li class="right">
+                   <p id="lrg_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(18);">A</p>
+                </li>
+                <li class="right">
+                    <p id="med_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(14);">A</p>              
+                </li>
+                <li class="right">
+                   <p id="sml_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(10);">A</p>
+                </li>
+                <li class="right">
+                    <p onmouseover="this.style.cursor='hand'">
+
             </ul>
         </nav>
     </header>
     <br>
     <br>
     <div class="TopScreen">
-
-
-        <section class="module parallax parallax-frontpage">
-            <div class="container">
-                <h1 class="title">Joshua Pooley</h1>
-                
-            </div>
-        </section>
+        <h1 class="title">Joshua Pooley</h1>
         <h2>IT Apprentice</h2>
         <h3>YouTuber</h3>
         <!--Image which changes on hover-->
@@ -69,11 +75,15 @@
        		</div>
         </div>
     </div>
-    <!--This adds a footer to the bottom of the page-->
+
+    <button onclick="TestFunction()">Test Button</button>
+
+       <!--This adds a footer to the bottom of the page-->
     <footer>
         <p>&copy; Created and built by Joshua Pooley - 2017
             <p>
     </footer>
+    <script src="TestJava.js" type="text/javascript"></script>
 </body>
 
 </html>

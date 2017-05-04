@@ -31,6 +31,28 @@ body{
 	background-color: white;
 	font-family:"Palatino Linotype";
 }
+
+#sml_font {
+	font-size: 12px;
+	padding-top: 19px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#med_font {
+	font-size: 17px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#lrg_font {
+	font-size: 22px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 9px;
+	padding-bottom: 2px;
+}
+
 /*Specific style for the title*/
 .title{
 	color: rgb(121, 20, 209);
@@ -69,8 +91,12 @@ a:hover#menu-icon {
 	background-color: black;
 }
 
-.topnav li{
+li.left {
 	float: left;
+}
+
+li.right {
+	float: right;
 }
 
 .topnav li a{
@@ -85,6 +111,15 @@ a:hover#menu-icon {
 
 .topnav li a:hover{
 	background-color: #4F88EC;
+}
+
+.topnav li p{
+	display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 10px 4px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .center{
@@ -236,7 +271,7 @@ section.module.parallax {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: auto;
 }
 
 section.module.parallax h1 {
@@ -247,10 +282,6 @@ section.module.parallax h1 {
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-section.module.parallax-frontpage {
-	background-image: url("index_header.jpg");
 }
 
 section.module.parallax-1 {
@@ -314,9 +345,10 @@ iframe.Subscriber{
 }
 
 .photobanner {
-	height: 100px;
+	height: 150px;
 	width: 7000px;
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .photobanner img {
@@ -420,4 +452,9 @@ button{
 
 button:hover{
 	background-color: #1b00ba;
+}
+
+.form-group p{
+	color: red;
+	font-weight: bold;
 }
