@@ -1,6 +1,31 @@
+//Accessibility buttons which are on the navigation bar
+
 function changeFontSize(size) {
 	var div = document.body;
 	div.style.fontSize = size + "px";
+}
+
+function changeBackgroundColour(colour) {
+	var fontColour = document.body.style.color.value;
+
+	if (fontColour == colour){
+		alert("Cannot choose same colour as the font");
+	}
+	else {
+		document.body.style.backgroundColor = colour;
+	}
+
+}
+
+function changeFontColour(colour){
+	var backgroundColour = document.body.style.backgroundColor.value;
+
+	if (backgroundColour == colour){
+		alert("Cannot choose same colour as the background");
+	}
+	else {
+		document.body.style.color = colour;
+	}
 }
 
 function TestFunction() {
@@ -8,6 +33,8 @@ function TestFunction() {
 	alert("Hello!!");
 
 }
+
+//Verification checks for contact form
 
 function checkNameInput() {
 	var name = document.getElementById("InputName").value;
