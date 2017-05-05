@@ -75,4 +75,10 @@ function buttonActivation() {
 	}
 }
 
+function nameInput() {
+	var Name = prompt("Please enter your name below")
+
+	if (Name != null){
+		document.getElementById("entryMessage").innerHTML = "Welcome " + Name + "! Enjoy your stay on my website!"; 
+	}
 }

@@ -242,6 +242,32 @@ li.right {
 	padding-bottom: 30px;
 }
 
+#entryPage{
+	background-image: url("About_Header.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
+}
+
+#entryPage h1{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 80px;
+	line-height: 600px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#entryPage button{
+	position: absolute;
+	top: 70%;
+	left: 39%;
+	font-size: 50px;
+
+}
+
 /*This section contains all the code to make the parallax effect on the images work correctly*/
 .container {
 	max-width: 960px;
