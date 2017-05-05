@@ -33,14 +33,14 @@ function checkNameInput() {
 }
 
 function checkEmailInput() {
-	var emailPattern = /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
+	var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	var email = document.getElementById("InputEmail").value;
 
 	if (email == "") {
 		document.getElementById("emailAlertField").innerHTML = "Please enter your email";
 		return false;
 	}
-	else if (!email.value.match(emailPattern)) {
+	else if (emailPattern.test(email) == false) {
 		document.getElementById("emailAlertField").innerHTML = "Please enter a valid email address";
 		return false;
 	}
