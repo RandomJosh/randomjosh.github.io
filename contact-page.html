@@ -77,21 +77,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8 col-xs-offset-2">
-                        <form>
+                        <form action="https://formspree.io/randomjosh@outlook.com" method="POST">
                             <div class="form-group">
                                 <label for="InputName">Name</label>
-                                <input type="text" class="form-control" id="InputName" placeholder="Name" oninput="checkNameInput()">
+                                <input type="text" class="form-control" id="InputName" placeholder="Name" oninput="checkNameInput()" name="Name">
                                 <p id="nameAlertField"></p>
                             </div>
                             <div class="form-group">
                                 <label for="InputEmail">Email</label>
-                                <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+                                <input type="email" class="form-control" id="InputEmail" placeholder="Email" oninput="checkEmailInput()" name="Email">
+                                <p id="emailAlertField"></p>
                             </div>
                             <div class="form-group">
                                 <label for="InputMessage">Message</label>
-                                <input type="message" class="form-control" id="InputMessage" placeholder="Message">
+                                <textarea type="message" class="form-control" id="InputMessage" placeholder="Message" oninput="checkMessageInput()" name="Message"></textarea>
+                                <p id="messageAlertField"></p>
                             </div>
-                            <button type="submit">Submit</button>
+                            <button type="submit" value="Send" id="submit" disabled>Submit</button>
                         </form>
                     </div>
                 </div>
