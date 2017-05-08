@@ -1,31 +1,7 @@
-//Accessibility buttons which are on the navigation bar
 
 function changeFontSize(size) {
 	var div = document.body;
 	div.style.fontSize = size + "px";
-}
-
-function changeBackgroundColour(colour) {
-	var fontColour = document.body.style.color.value;
-
-	if (fontColour == colour){
-		alert("Cannot choose same colour as the font");
-	}
-	else {
-		document.body.style.backgroundColor = colour;
-	}
-
-}
-
-function changeFontColour(colour){
-	var backgroundColour = document.body.style.backgroundColor.value;
-
-	if (backgroundColour == colour){
-		alert("Cannot choose same colour as the background");
-	}
-	else {
-		document.body.style.color = colour;
-	}
 }
 
 function TestFunction() {
@@ -34,7 +10,6 @@ function TestFunction() {
 
 }
 
-//Verification checks for contact form
 
 function checkNameInput() {
 	var name = document.getElementById("InputName").value;
@@ -92,6 +67,7 @@ function checkMessageInput() {
 		document.getElementById("messageAlertField").innerHTML = "";
 		return true;
 	}
+}
 
 function buttonActivation() {
 	if (checkMessageInput() == true && checkEmailInput() == true && checkNameInput == true) {
@@ -109,3 +85,35 @@ function nameInput() {
 		document.getElementById("entryMessage").innerHTML = "Welcome " + Name + "! Enjoy your stay on my website!"; 
 	}
 }
+
+//Image Slideshow code so it automatically shifts
+
+	var slideIndex = 0;
+    showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+/*function screenSize() {
+	var width = window.screen.availWidth;
+
+	if ()
+}*/
