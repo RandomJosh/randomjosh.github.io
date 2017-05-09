@@ -1,7 +1,38 @@
+//Accessibility buttons which are on the navigation bar
 
 function changeFontSize(size) {
 	var div = document.body;
 	div.style.fontSize = size + "px";
+	var sections = document.getElementsByClassName("module.content");
+	var i;
+	for (i = 0; i < sections.length; i++) {
+		sections[i].style.fontSize = size + "px";
+	}
+}
+
+function changeBackgroundColour(colour) {
+	var fontColour = document.body.style.color.value;
+
+	if (fontColour == colour){
+		alert("Cannot choose same colour as the font");
+	}
+	else {
+		document.body.style.backgroundColor = colour;
+		localstorage.setItem("backgroundColour", colour);
+	}
+
+}
+
+function changeFontColour(colour){
+	var backgroundColour = document.body.style.backgroundColor.value;
+
+	if (backgroundColour == colour){
+		alert("Cannot choose same colour as the background");
+	}
+	else {
+		document.body.style.color = colour;
+		localstorage.setItem("fontColour", colour);
+	}
 }
 
 function TestFunction() {
@@ -10,6 +41,7 @@ function TestFunction() {
 
 }
 
+//Verification checks for contact form
 
 function checkNameInput() {
 	var name = document.getElementById("InputName").value;
@@ -81,8 +113,11 @@ function buttonActivation() {
 function nameInput() {
 	var Name = prompt("Please enter your name below")
 
-	if (Name != null){
+	if (Name != ""){
 		document.getElementById("entryMessage").innerHTML = "Welcome " + Name + "! Enjoy your stay on my website!"; 
+	}
+	else {
+		document.getElementById("entryMessage").innerHTML = ""
 	}
 }
 
@@ -112,8 +147,15 @@ function myFunction() {
     }
 }
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 /*function screenSize() {
 	var width = window.screen.availWidth;
 
-	if ()
-}*/
+	if ()*/
