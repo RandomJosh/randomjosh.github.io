@@ -35,6 +35,12 @@ function changeFontColour(colour){
 	}
 }
 
+function checkColours(){
+	document.body.style.backgroundColor = localstorage.getItem("backgroundColour");
+	document.body.style.color = localstorage.getItem("fontColour");
+
+}
+
 function TestFunction() {
 
 	alert("Hello!!");

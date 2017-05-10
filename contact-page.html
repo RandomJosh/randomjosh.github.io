@@ -16,39 +16,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="checkColours()">
 <!--Top navigations bar which is used on each page-->
     <header>
         <nav>
-            <ul class="topnav" id="myTopnav">
-                <li class="left">
-                    <img src="Logo_50px.svg" alt="">
-                </li>
-                <li class="left">
-                    <a href='index.html'>Home</a>
-                </li>
-                <li class="left">
-                    <a href='about-page.html'>About</a>
-                </li>
-                <li class="left">
-                    <a href='work-page.html'>Work</a>
-                </li>
-                <li class="left">
-                    <a href='contact-page.html' class="current">Contact</a>
-                </li>
-                <li class="left">
-                    <a href='youtube-page.html'>Youtube</a>
-                </li>
-                <li class="right">
-                   <p id="lrg_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(18);">A</p>
-                </li>
-                <li class="right">
-                    <p id="med_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(14);">A</p>              
-                </li>
-                <li class="right">
-                   <p id="sml_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(10);">A</p>
-                </li>
-            </ul>
+            
+            <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about-page.html">About</a>
+        <a href="work-page.html">Work</a>
+        <a href="contact-page.html">Contact</a>
+        <a href="youtube-page.html">YouTube</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" id="lrg_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(18);">A</a>
+        <a href="javascript:void(0);" id="med_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(14);">A</a>              
+        <a href="javascript:void(0);" id="sml_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(10);">A</a>
+        <a href="javascript:void(0);" id="backgroundColChange" onmouseover="this.style.cursor= 'hand'"><i class="glyphicon glyphicon-text-background"></i></a>
+        <a href="javascript:void(0);" id="fontColChange" onmouseover="this.style.cursor= 'hand'"><i class="glyphicon glyphicon-text-color"></i></a>
+
         </nav>
     </header>
     <br>
@@ -100,6 +85,26 @@
             </div>
         </div>
     </section>
+    <h3>Background Colour Change</h3>
+    <button onclick="changeBackgroundColour('blue')">Blue</button>
+    <button onclick="changeBackgroundColour('red')">Red</button>
+    <button onclick="changeBackgroundColour('green')">Green</button>
+    <button onclick="changeBackgroundColour('yellow')">Yellow</button>
+    <button onclick="changeBackgroundColour('hotpink')">Pink</button>
+    <button onclick="changeBackgroundColour('purple')">Purple</button>
+    <button onclick="changeBackgroundColour('white')">White</button>
+    <button onclick="changeBackgroundColour('cornflowerblue')">Reset</button>
+    <br>
+    <h3>Font Colour Change</h3>
+    <button onclick="changeFontColour('blue')">Blue</button>
+    <button onclick="changeFontColour('red')">Red</button>
+    <button onclick="changeFontColour('green')">Green</button>
+    <button onclick="changeFontColour('yellow')">Yellow</button>
+    <button onclick="changeFontColour('hotpink')">Pink</button>
+    <button onclick="changeFontColour('purple')">Purple</button>
+    <button onclick="changeFontColour('white')">White</button>
+    <button onclick="changeFontColour('black')">Black</button>
+    <button onclick="changeFontColour('black')">Reset</button>
 <!--Footer which is carried over to every page-->
 <footer>
         <p>&copy; Created and built by Joshua Pooley - 2017
