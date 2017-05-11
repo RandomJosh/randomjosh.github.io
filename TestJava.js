@@ -1,44 +1,68 @@
 //Accessibility buttons which are on the navigation bar
 
 function changeFontSize(size) {
-	var div = document.body;
-	div.style.fontSize = size + "px";
+	document.body.style.fontSize = size + "px";
 	var sections = document.getElementsByClassName("module.content");
 	var i;
 	for (i = 0; i < sections.length; i++) {
 		sections[i].style.fontSize = size + "px";
 	}
+	localStorage.setItem("fontSize", size);
 }
 
-function changeBackgroundColour(colour) {
-	var fontColour = document.body.style.color.value;
+/*function changeBackgroundColour(colour) {
+	var fontColour = document.body.style.color.text;
 
 	if (fontColour == colour){
 		alert("Cannot choose same colour as the font");
 	}
 	else {
 		document.body.style.backgroundColor = colour;
-		localstorage.setItem("backgroundColour", colour);
+		localStorage.setItem("backgroundColour", colour);
 	}
 
+}*/
+
+function changeBackgroundColour() {
+	var eID = document.getElementById("bgColour");
+	var colourtxt = eID.options[eID.selectedIndex].text;
+	document.body.style.backgroundColor = colourtxt;
+	localStorage.setItem("backgroundColour", colourtxt);
 }
 
-function changeFontColour(colour){
-	var backgroundColour = document.body.style.backgroundColor.value;
+
+/*function changeFontColour(colour){
+	var backgroundColour = document.body.style.backgroundColor.text;
 
 	if (backgroundColour == colour){
 		alert("Cannot choose same colour as the background");
 	}
 	else {
 		document.body.style.color = colour;
-		localstorage.setItem("fontColour", colour);
+		localStorage.setItem("fontColour", colour);
 	}
+}*/
+
+function changeFontColour() {
+	var eID = document.getElementById("fontColour");
+	var colourtxt = eID.options[eID.selectedIndex].text;
+	document.body.style.color = colourtxt;
+	localStorage.setItem("fontColour", colourtxt);
 }
 
-function checkColours(){
-	document.body.style.backgroundColor = localstorage.getItem("backgroundColour");
-	document.body.style.color = localstorage.getItem("fontColour");
+function resetStyle(){
+	var backgroundColour = "cornflowerblue";
+	var fontColour = "black";
+	document.body.style.backgroundColor = backgroundColour;
+	document.body.style.color = fontColour;
+	localStorage.setItem("backgroundColour", backgroundColour);
+	localStorage.setItem("fontColour", fontColour);
+}
 
+function checkStyles(){
+	document.body.style.backgroundColor = localStorage.getItem("backgroundColour");
+	document.body.style.color = localStorage.getItem("fontColour");
+	document.body.style.fontSize = localStorage.getItem("fontSize");
 }
 
 function TestFunction() {

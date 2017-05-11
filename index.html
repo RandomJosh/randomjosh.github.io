@@ -17,24 +17,46 @@
     
 </head>
 
-<body onload="checkColours()">
+<body onload="checkStyles()">
 	<!--Navigations Bar-->
     <header>
         <nav>
             
-            <div class="topnav" id="myTopnav">
-            <a href="#"><img src="Logo_50px.svg" alt="" class="logo"></a>
-        <a href="index.html">Home</a>
-        <a href="about-page.html">About</a>
-        <a href="work-page.html">Work</a>
-        <a href="contact-page.html">Contact</a>
-        <a href="youtube-page.html">YouTube</a>
+        <div class="topnav" id="myTopnav">
+        <a href="#"><img src="Logo_50px_new.svg" alt="" class="logo"></a>
+        <a href="index.html" accesskey="1" class="current">Home</a>
+        <a href="about-page.html" accesskey="2">About</a>
+        <a href="work-page.html" accesskey="3">Work</a>
+        <a href="contact-page.html" accesskey="4">Contact</a>
+        <a href="youtube-page.html" accesskey="5">YouTube</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         <a href="javascript:void(0);" id="lrg_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(18);">A</a>
         <a href="javascript:void(0);" id="med_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(14);">A</a>              
         <a href="javascript:void(0);" id="sml_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(10);">A</a>
         <a href="javascript:void(0);" id="backgroundColChange" onmouseover="this.style.cursor= 'hand'"><i class="glyphicon glyphicon-text-background"></i></a>
+        <a href="#"><select id="bgColour" onchange="changeBackgroundColour()" class="selection">
+            <option value="1">Blue</option>
+            <option value="2">Red</option>
+            <option value="3">Green</option>
+            <option value="4">Yellow</option>
+            <option value="5">Pink</option>
+            <option value="6">Purple</option>
+            <option value="7">White</option>
+            <option value="8">Black</option>
+        </select></a>
         <a href="javascript:void(0);" id="fontColChange" onmouseover="this.style.cursor= 'hand'"><i class="glyphicon glyphicon-text-color"></i></a>
+        <a href="#"><select id="fontColour" onchange="changeFontColour()" class="selection">
+            <option value="1">Blue</option>
+            <option value="2">Red</option>
+            <option value="3">Green</option>
+            <option value="4">Yellow</option>
+            <option value="5">Pink</option>
+            <option value="6">Purple</option>
+            <option value="7">White</option>
+            <option value="8">Black</option>
+        </select></a>
+
+            <button onclick="resetStyle()">Reset</button>
 
         </nav>
 
@@ -62,25 +84,31 @@
     <button onclick="TestFunction()">Test Button</button>
     <br>
     <h3>Background Colour Change</h3>
-    <button onclick="changeBackgroundColour('blue')">Blue</button>
-    <button onclick="changeBackgroundColour('red')">Red</button>
-    <button onclick="changeBackgroundColour('green')">Green</button>
-    <button onclick="changeBackgroundColour('yellow')">Yellow</button>
-    <button onclick="changeBackgroundColour('hotpink')">Pink</button>
-    <button onclick="changeBackgroundColour('purple')">Purple</button>
-    <button onclick="changeBackgroundColour('white')">White</button>
-    <button onclick="changeBackgroundColour('cornflowerblue')">Reset</button>
+    <select id="bgColour" onchange="changeBackgroundColour()" class="selection">
+        <option value="1">Blue</option>
+        <option value="2">Red</option>
+        <option value="3">Green</option>
+        <option value="4">Yellow</option>
+        <option value="5">Pink</option>
+        <option value="6">Purple</option>
+        <option value="7">White</option>
+        <option value="8">Black</option>
+    </select>
+    
     <br>
     <h3>Font Colour Change</h3>
-    <button onclick="changeFontColour('blue')">Blue</button>
-    <button onclick="changeFontColour('red')">Red</button>
-    <button onclick="changeFontColour('green')">Green</button>
-    <button onclick="changeFontColour('yellow')">Yellow</button>
-    <button onclick="changeFontColour('hotpink')">Pink</button>
-    <button onclick="changeFontColour('purple')">Purple</button>
-    <button onclick="changeFontColour('white')">White</button>
-    <button onclick="changeFontColour('black')">Black</button>
-    <button onclick="changeFontColour('black')">Reset</button>
+    <select id="fontColour" onchange="changeFontColour()" class="selection">
+        <option value="1">Blue</option>
+        <option value="2">Red</option>
+        <option value="3">Green</option>
+        <option value="4">Yellow</option>
+        <option value="5">Pink</option>
+        <option value="6">Purple</option>
+        <option value="7">White</option>
+        <option value="8">Black</option>
+    </select>
+        
+
 
        <!--This adds a footer to the bottom of the page-->
     <footer>

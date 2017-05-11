@@ -16,23 +16,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="checkColours()">
+<body onload="checkStyles()">
 <!--Navigations bar which is on all of the pages-->
     <header>
         <nav>
             
             <div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="about-page.html">About</a>
-        <a href="work-page.html">Work</a>
-        <a href="contact-page.html">Contact</a>
-        <a href="youtube-page.html">YouTube</a>
+        <a href="#"><img src="Logo_50px_new.svg" alt="" class="logo"></a>
+        <a href="index.html" accesskey="1">Home</a>
+        <a href="about-page.html" accesskey="2">About</a>
+        <a href="work-page.html" accesskey="3">Work</a>
+        <a href="contact-page.html" accesskey="4">Contact</a>
+        <a href="youtube-page.html" accesskey="5" class="current">YouTube</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         <a href="javascript:void(0);" id="lrg_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(18);">A</a>
         <a href="javascript:void(0);" id="med_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(14);">A</a>              
         <a href="javascript:void(0);" id="sml_font" onmouseover="this.style.cursor='hand'" onclick="changeFontSize(10);">A</a>
         <a href="javascript:void(0);" id="backgroundColChange" onmouseover="this.style.cursor= 'hand'"><i class="glyphicon glyphicon-text-background"></i></a>
+        <a href="#"><select id="bgColour" onchange="changeBackgroundColour()" class="selection">
+            <option value="1">Blue</option>
+            <option value="2">Red</option>
+            <option value="3">Green</option>
+            <option value="4">Yellow</option>
+            <option value="5">Pink</option>
+            <option value="6">Purple</option>
+            <option value="7">White</option>
+            <option value="8">Black</option>
+        </select></a>
         <a href="javascript:void(0);" id="fontColChange" onmouseover="this.style.cursor= 'hand'"><i class="glyphicon glyphicon-text-color"></i></a>
+        <a href="#"><select id="fontColour" onchange="changeFontColour()" class="selection">
+            <option value="1">Blue</option>
+            <option value="2">Red</option>
+            <option value="3">Green</option>
+            <option value="4">Yellow</option>
+            <option value="5">Pink</option>
+            <option value="6">Purple</option>
+            <option value="7">White</option>
+            <option value="8">Black</option>
+        </select></a>
+
+            <button onclick="resetStyle()">Reset</button>
 
         </nav>
     </header>
