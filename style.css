@@ -59,69 +59,8 @@ body{
 	color: rgb(121, 20, 209);
 	font-size: 40pt;
 }
-/*Navigation styling to get it to look and animate correctly*/
-/*nav{
-	z-index: 2;
-	position: relative;
-}
 
-#menu-icon {
-
-	display: hidden;
-	width: 40px;
-	height: 40px;
-	background: black url("menu-icon.png") center;
-
-}
-
-a:hover#menu-icon {
-
-	background-color: #444;
-	border-radius: 4px 4px 0 0;
-
-}
-
-.topnav{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: black;
-}
-
-li.left {
-	float: left;
-}
-
-li.right {
-	float: right;
-}
-
-.topnav li a{
-    display: inline-block;
-    color: #f2f2f2;
-    text-align:center;
-    padding:14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.topnav li a:hover{
-	background-color: #4F88EC;
-}
-
-.topnav li p{
-	display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 10px 4px;
-    text-decoration: none;
-    font-size: 17px;
-} */
+/*Navigation Bars styling options*/
 
 .topnav {
   overflow: hidden;
@@ -132,6 +71,7 @@ li.right {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 .topnav a {
@@ -175,6 +115,10 @@ li.right {
   }
 }
 
+a button {
+	font-size: 13px;
+}
+
 .logo {
 	height: 24px;
 }
@@ -183,18 +127,12 @@ li.right {
 	align-content: center;
 }
 
-/*.TopScreen{
-	background-color: cornflowerblue; 
-	padding-bottom: 30px;
-}*/
-
 .current{
 	background-color: #4F88EC;
 }
 
 /*Specific Styling options for each different page*/
 .about-area{
-	/*background-color: #2f77db;*/
 	padding-bottom: 30px;
 }
 
@@ -202,12 +140,9 @@ li.right {
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
-	/*color: black;
-	font-size: 17px;*/
 }
 
 .work-area{
-	/*background-color: #7560ff;*/
 	padding-bottom: 30px;
 }
 
@@ -217,16 +152,10 @@ li.right {
 }
 
 .youtube-area{
-	/*background-color: #181ba2;*/
 	padding-bottom: 30px;
 }
 
-/*.youtube-area p{
-	color: black;
-}*/
-
 .contact-area{
-	/*background-color: #5c65ff;*/
 	padding-bottom: 30px;
 }
 
@@ -266,12 +195,6 @@ section.module:last-child {
 	margin-bottom: 0;
 }
 
-/*section.module p {
-	margin-bottom: 40px;
-	font-size: 16px;
-	font-weight: 300;
-}*/
-
 section.module p:last-child {
 	margin-bottom: 0;
 }
@@ -286,6 +209,7 @@ section.module.parallax {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	width: 100%;
 }
 
 section.module.parallax h1 {
@@ -414,4 +338,6 @@ button:hover{
 
 .selection {
 	color: black;
+	height: 24px;
+	font-size: 15px;
 }

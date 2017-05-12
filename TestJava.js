@@ -63,6 +63,7 @@ function checkStyles(){
 	document.body.style.backgroundColor = localStorage.getItem("backgroundColour");
 	document.body.style.color = localStorage.getItem("fontColour");
 	document.body.style.fontSize = localStorage.getItem("fontSize");
+	
 }
 
 function TestFunction() {
@@ -176,16 +177,3 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-/*function screenSize() {
-	var width = window.screen.availWidth;
-
-	if ()*/
