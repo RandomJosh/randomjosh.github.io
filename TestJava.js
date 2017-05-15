@@ -26,8 +26,12 @@ function changeFontSize(size) {
 function changeBackgroundColour() {
 	var eID = document.getElementById("bgColour");
 	var colourtxt = eID.options[eID.selectedIndex].text;
+	if (colourtxt == localStorage.getItem("fontColour")){
+		alert("Cannot choose the same colour as the font! Please select another colour");
+	}else {
 	document.body.style.backgroundColor = colourtxt;
 	localStorage.setItem("backgroundColour", colourtxt);
+	}
 }
 
 
@@ -46,8 +50,12 @@ function changeBackgroundColour() {
 function changeFontColour() {
 	var eID = document.getElementById("fontColour");
 	var colourtxt = eID.options[eID.selectedIndex].text;
+	if (colourtxt == localStorage.getItem("backgroundColour")){
+		alert("Cannot choose the same colour as the background! Please select another colour");
+	}else {
 	document.body.style.color = colourtxt;
 	localStorage.setItem("fontColour", colourtxt);
+	}
 }
 
 function resetStyle(){
@@ -133,11 +141,12 @@ function checkMessageInput() {
 }
 
 function buttonActivation() {
-	if (checkMessageInput() == true && checkEmailInput() == true && checkNameInput == true) {
-		document.getElementById("submit").disabled = false;
+	if (checkMessageInput() && checkEmailInput() && checkNameInput()) {
+		return true;
 	}
 	else {
-		document.getElementById("submit").disabled = true;
+		alert("Submission failed, please ensure all fields are filled");
+		return false;
 	}
 }
 
